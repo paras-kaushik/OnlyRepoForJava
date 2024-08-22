@@ -22,7 +22,7 @@ The project is an e-commerce application using Spring Boot and Spring Data JPA t
         - `role`: Maps to `role` field (enum).
     - **Reason for Creation**: The `@Entity` annotation on the `User` class instructs JPA to create this table.
 
-2. **`user_order` Table**:
+2. **`user_order` Table**:(Camel Case java entity translates to snake_case SQL tables by default)
     - **Columns**:
         - `id`: Auto-generated primary key.
         - `order_number`: Maps to `orderNumber` field.
